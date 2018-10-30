@@ -1,6 +1,6 @@
 package demo.springboot.web;
 
-import demo.springboot.config.BookProperties;
+import demo.springboot.config.BookComponent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloBookController {
 
     @Autowired
-    BookProperties bookProperties;
+    BookComponent bookProperties;
 
     @GetMapping("/book/hello")
     public String sayHello() {

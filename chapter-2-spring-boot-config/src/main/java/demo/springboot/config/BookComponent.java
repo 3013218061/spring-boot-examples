@@ -13,6 +13,7 @@ import javax.validation.constraints.NotNull;
  */
 @Component
 @ConfigurationProperties(prefix = "demo.book")
+//@PropertySource("classpath:application-prod.properties") //application.xml > application.yml > @PropertySource
 @Validated
 public class BookComponent {
 

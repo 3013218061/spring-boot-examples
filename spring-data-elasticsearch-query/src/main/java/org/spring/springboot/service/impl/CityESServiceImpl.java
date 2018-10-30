@@ -38,7 +38,7 @@ public class CityESServiceImpl implements CityService {
 
     @Autowired
     CityRepository cityRepository; // ES 操作类
-
+    @Override
     public Long saveCity(City city) {
         City cityResult = cityRepository.save(city);
         return cityResult.getId();

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
  * Created by bysocket on 27/09/2017.
  */
 @Component
+//@PropertySource("classpath:application-prod.properties") //application.xml > application.yml > @PropertySource
 public class BookProperties {
 
     /**
